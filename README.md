@@ -1,3 +1,5 @@
 # angular-ngrx-store
 
-[Edit in Codeflow ⚡️](https://stackblitz.com/~/github.com/victorBriand/angular-ngrx-store)
+## Description
+
+This app help to have a better understanding of Angular ngrx/store
