@@ -1,6 +1,21 @@
 <div>
-    <div>Current Count: {{ count$ | async }}</div>
-    <button (click)="increment()">Increment (+1)</button>
-    <button (click)="decrement()">Decrement (-1)</button>
-    <button (click)="reset()">Reset</button>
+    <div class="flex justify-evenly items-center">
+
+        <button (click)="decrement()"
+            class="inline-flex justify-center items-center px-3 h-12 w-12 py-2 text-3xl font-medium text-center text-white bg-red-600 rounded-full hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+            -
+        </button>
+        <div class="text-center text-9xl my-4">{{ count$ | async }}</div>
+        <button (click)="increment()"
+            class="inline-flex justify-center items-center px-3 h-12 w-12 py-2 text-3xl font-medium text-center text-white bg-green-600 rounded-full hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            +
+        </button>
+    </div>
+    <div class="flex justify-evenly">
+
+        <button (click)="reset()"
+            class="inline-flex items-center px-5 py-2 text-sm font-medium text-center text-white bg-gray-600 rounded-full hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+            Reset
+        </button>
+    </div>
 </div>
